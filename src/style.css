@@ -1,4 +1,29 @@
-.task-table
+body
+{
+    background-color: rgb(216, 216, 137);
+}
+
+.taskRow
+{
+    padding-top: 20px;
+}
+
+.taskRow table
 {
     border: solid black;
+}
+
+.table-row
+{
+    border-bottom: solid black;
+}
+
+.task-table label
+{
+    padding-right: 5px;
+}
+
+.lineCross
+{
+    text-decoration: line-through;
 }

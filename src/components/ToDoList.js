@@ -15,10 +15,11 @@ function ToDoList()
         );
     };
 
-    return(
-        <div className="row">
-            <div className="col-12 text-center">
+    console.log(taskData);
 
+    return(
+        <div className="row taskRow">
+            <div className="col-12 d-flex justify-content-center">
                 <table>
                     <tbody>
                         <tr>
@@ -27,11 +28,11 @@ function ToDoList()
                             </td>
                         </tr>
                         {taskData.map((task) => (
-                            <div key={task.id}>
+                            <div key={task.id} className="table-row">
                                 <tr className="task-table">
                                     <th>
-                                        <p>{task.taskTitle}</p>
-                                        <p>{task.description}</p>
+                                        <p className={task.completeStatus ? 'lineCross' : ''}>{task.taskTitle}</p>
+                                        <p className={task.completeStatus ? 'lineCross' : ''}>{task.description}</p>
                                         <label htmlFor="completeStatus">Task Complete?</label>
                                         <input type="checkbox" name="completeStatus" id="completeStatus" value={task.completeStatus} checked={task.completeStatus} onChange={() => toggleTask(task.id)} />
                                     </th>

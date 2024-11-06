@@ -3,13 +3,13 @@ export default [
         id: 1,
         taskTitle: "Do the Dishes",
         description: "Dishes need to be clean for dinner",
-        completeStatus: false,
+        completeStatus: false
     },
     {
         id: 2,
         taskTitle: "Feed the Fish",
         description: "The fish are hungry!",
-        completeStatus: true
+        completeStatus: false
     },
     {
         id: 3,
