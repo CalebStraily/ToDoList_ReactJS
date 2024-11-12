@@ -1,21 +1,21 @@
-export default [
+export const taskData = [
     {
         id: 1,
-        taskTitle: "Do the Dishes",
-        description: "Dishes need to be clean for dinner",
+        taskTitle: "Take out the trash",
+        description: "It's full and stinks",
         completeStatus: false
     },
     {
         id: 2,
         taskTitle: "Feed the Fish",
         description: "The fish are hungry!",
-        completeStatus: false
+        completeStatus: true
     },
     {
         id: 3,
         taskTitle: "Mow the lawn",
         description: "Grass too tall!",
-        completeStatus: false
+        completeStatus: true
     },
     {
         id: 4,

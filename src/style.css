@@ -1,29 +1,25 @@
 body
 {
-    background-color: rgb(216, 216, 137);
+    background-color: #C1DBE3;
+    color: #373737;
 }
 
-.taskRow
+.list-column
 {
-    padding-top: 20px;
+    word-wrap: break-word !important; /* Allows long text to wrap */
+    overflow-wrap: break-word !important; /* Ensures long words break to fit */
+    white-space: normal !important;
 }
 
-.taskRow table
+.list-container
 {
-    border: solid black;
+    background-color: #F6FEAA;
+    box-shadow: 10px 10px;
+    border: solid #FCE694;
 }
 
-.table-row
+.checkBox input
 {
-    border-bottom: solid black;
-}
-
-.task-table label
-{
-    padding-right: 5px;
-}
-
-.lineCross
-{
-    text-decoration: line-through;
+    transform: scale(1.5);
+    margin-right: 40px;
 }
