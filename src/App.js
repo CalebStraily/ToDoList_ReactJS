@@ -3,6 +3,7 @@ import "./style.css"
 import { taskData } from './components/TaskList';
 import Header from './components/Header';
 import Body from './components/Body';
+import { v4 as uuidv4 } from 'uuid';
 
 function App() 
 {
@@ -12,7 +13,7 @@ function App()
     function addTask(title, description)
     {
         const newTaskObj = {
-            id: tasks.length + 1,
+            id: uuidv4(),
             taskTitle: title,
             description: description,
             completeStatus: false
