@@ -9,7 +9,6 @@ function TaskRender({ task, toggleDone })
                     <div className="row">
                         <div className="col-12">
                             <h3>{ task.completeStatus ? <div><del>{task.taskTitle}</del></div> : <div>{task.taskTitle}</div> }</h3>
-                            
                         </div>
                         <div className="col-12 d-flex checkBox justify-content-center">
                             <input type="checkbox" checked={task.completeStatus} onChange={() => toggleDone(task.id)} />

@@ -9,7 +9,7 @@ export const taskData = [
         id: 2,
         taskTitle: "Feed the Fish",
         description: "The fish are hungry!",
-        completeStatus: true
+        completeStatus: false
     },
     {
         id: 3,
@@ -20,7 +20,7 @@ export const taskData = [
     {
         id: 4,
         taskTitle: "Make a v2 of Task List",
-        description: "The user should be able to add and remove tasks!",
-        completeStatus: false
+        description: "The user should be able to add tasks!",
+        completeStatus: true
     }
 ]

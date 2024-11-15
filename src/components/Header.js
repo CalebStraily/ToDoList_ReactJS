@@ -12,8 +12,8 @@ function Header({ addTask })
     {
         const { name, value } = event.target;
 
-        setFormData((prevData) => ({
-            ...prevData,
+        setFormData((prevFormData) => ({
+            ...prevFormData,
             [name]: value
         }));
     }
